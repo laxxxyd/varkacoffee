@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARKA — Кофейня в Екатеринбурге</title>
+    <meta name="description" content="Современная городская кофейня VARKA в самом сердце Екатеринбурга. Авторский кофе, уютная атмосфера и эстетика минимализма.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#home" class="logo">VARKA</a>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link">Главная</a></li>
+                    <li><a href="#about" class="nav__link">О нас</a></li>
+                    <li><a href="#menu" class="nav__link">Меню</a></li>
+                    <li><a href="#advantages" class="nav__link">Преимущества</a></li>
+                    <li><a href="#atmosphere" class="nav__link">Атмосфера</a></li>
+                    <li><a href="#contact" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="#contact" class="btn btn--outline">Связаться с нами</a>
+                <button class="burger" id="burger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="hero__subtitle-top">VARKA • ЕКАТЕРИНБУРГ</span>
+                    <h1 class="hero__title">КОФЕ. КОТОРЫЙ СТАНОВИТСЯ РИТУАЛОМ.</h1>
+                    <p class="hero__description">Место, где каждый глоток — удовольствие. Завариваем настроение в самом сердце Екатеринбурга.</p>
+                    <div class="hero__buttons">
+                        <a href="#menu" class="btn btn--primary">Посмотреть меню</a>
+                        <a href="#contact" class="btn btn--outline">Связаться с нами</a>
+                    </div>
+                </div>
+                <div class="hero__image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1000&auto=format&fit=crop" alt="Чашка ароматного кофе в кофейне VARKA" class="hero__image" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container about__container">
+                <div class="about__grid">
+                    <div class="about__images">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop" alt="Процесс приготовления кофе" class="about__img about__img--1" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=800&auto=format&fit=crop" alt="Зёрна кофе премиум качества" class="about__img about__img--2" loading="lazy">
+                    </div>
+                    <div class="about__content">
+                        <span class="section__subtitle">ФИЛОСОФИЯ БРЕНДА</span>
+                        <h2 class="section__title">БОЛЬШЕ, ЧЕМ ПРОСТО КОФЕ</h2>
+                        <p class="about__text">
+                            Мы создали VARKA как пространство для тех, кто ценит эстетику минимализма, качество и искренность момента. Каждый сорт зерна отбирается с особым вниманием, а обжарка подчеркивает уникальный вкусовой профиль.
+                        </p>
+                        <ul class="about__features-list">
+                            <li>Внимание к каждой детали и культуре потребления</li>
+                            <li>Отборные кофейные зёрна класса Specialty</li>
+                            <li>Профессиональное оборудование и мастерство бариста</li>
+                            <li>Атмосфера, в которую хочется возвращаться ежедневно</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu section" id="menu">
+            <div class="container">
+                <div class="section__header text-center">
+                    <span class="section__subtitle">АССОРТИМЕНТ</span>
+                    <h2 class="section__title">ТВОЙ ЛЮБИМЫЙ ВКУС</h2>
+                    <p class="section__desc">Классика и авторские вариации, приготовленные с любовью.</p>
+                </div>
+                
+                <div class="menu__grid">
+                    <!-- Item 1 -->
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=600&auto=format&fit=crop" alt="Эспрессо" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__content">
+                            <div class="menu-card__header">
+                                <h3 class="menu-card__title">Эспрессо</h3>
+                                <span class="menu-card__price">от 150 ₽</span>
+                            </div>
+                            <p class="menu-card__desc">Плотный шот с ярким балансом сладости и благородной кислинки.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop" alt="Американо" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__content">
+                            <div class="menu-card__header">
+                                <h3 class="menu-card__title">Американо</h3>
+                                <span class="menu-card__price">от 180 ₽</span>
+                            </div>
+                            <p class="menu-card__desc">Классический черный кофе с чистым и насыщенным вкусом.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=600&auto=format&fit=crop" alt="Капучино" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__content">
+                            <div class="menu-card__header">
+                                <h3 class="menu-card__title">Капучино</h3>
+                                <span class="menu-card__price">от 220 ₽</span>
+                            </div>
+                            <p class="menu-card__desc">Идеальный баланс эспрессо и бархатистой нежной молочной пены.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?q=80&w=600&auto=format&fit=crop" alt="Латте" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__content">
+                            <div class="menu-card__header">
+                                <h3 class="menu-card__title">Латте</h3>
+                                <span class="menu-card__price">от 240 ₽</span>
+                            </div>
+                            <p class="menu-card__desc">Мягкий слоистый напиток с преобладанием деликатного молока.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=600&auto=format&fit=crop" alt="Флэт уайт" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__content">
+                            <div class="menu-card__header">
+                                <h3 class="menu-card__title">Флэт уайт</h3>
+                                <span class="menu-card__price">от 250 ₽</span>
+                            </div>
+                            <p class="menu-card__desc">Двойной порционный эспрессо с тонким слоем микропены.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="menu-card">
+                        <div class="menu-card__img-wrap">
+                            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=600&auto=format&fit=crop" alt="Раф" class="menu-card__img" loading="lazy">
+                        </div>
+                        <div class="menu-card__content">
+                            <div class="menu-card__header">
+                                <h3 class="menu-card__title">Раф</h3>
+                                <span class="menu-card__price">от 270 ₽</span>
+                            </div>
+                            <p class="menu-card__desc">Авторский кофейный десерт на основе сливок и ванильного сахара.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section class="advantages section" id="advantages">
+            <div class="container">
+                <div class="section__header text-center">
+                    <span class="section__subtitle">ПОЧЕМУ МЫ</span>
+                    <h2 class="section__title">ПОЧЕМУ VARKA?</h2>
+                    <p class="section__desc">Стандарты качества, которые формируют безупречный вкус.</p>
+                </div>
+
+                <div class="advantages__grid">
+                    <div class="advantage-card">
+                        <div class="advantage-card__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <h3 class="advantage-card__title">Качественные зёрна</h3>
+                        <p class="advantage-card__desc">Используем исключительно проверенное сырье класса Specialty со строгим контролем.</p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-card__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <h3 class="advantage-card__title">Профессиональные бариста</h3>
+                        <p class="advantage-card__desc">Наши мастера постоянно совершенствуют навыки и знают всё о культуре заваривания.</p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-card__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+                        </div>
+                        <h3 class="advantage-card__title">Напитки на любой вкус</h3>
+                        <p class="advantage-card__desc">Широкий выбор классических позиций, альтернативы и сезонных авторских миксов.</p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="advantage-card__icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        </div>
+                        <h3 class="advantage-card__title">Уютная атмосфера</h3>
+                        <p class="advantage-card__desc">Стильный минималистичный интерьер для работы, встреч и приятного отдыха.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Atmosphere Section -->
+        <section class="atmosphere section" id="atmosphere">
+            <div class="container">
+                <div class="section__header text-center">
+                    <span class="section__subtitle">ГАЛЕРЕЯ</span>
+                    <h2 class="section__title">ПОЙМАЙ МОМЕНТ</h2>
+                    <p class="section__desc">Погрузитесь в эстетику и вайб нашей кофейни.</p>
+                </div>
+
+                <div class="atmosphere__grid">
+                    <div class="atmosphere__item">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop" alt="Приготовление кофе" loading="lazy">
+                    </div>
+                    <div class="atmosphere__item">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800&auto=format&fit=crop" alt="Крупный план кофейных зёрен" loading="lazy">
+                    </div>
+                    <div class="atmosphere__item">
+                        <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?q=80&w=800&auto=format&fit=crop" alt="Красиво оформленная чашка кофе" loading="lazy">
+                    </div>
+                    <div class="atmosphere__item">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop" alt="Атмосфера современной кофейни" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Feedback Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="contact__wrapper">
+                    <!-- Contacts Info -->
+                    <div class="contact__info">
+                        <span class="section__subtitle">КОНТАКТЫ</span>
+                        <h2 class="section__title">ЖДЁМ ТЕБЯ В VARKA</h2>
+                        <p class="contact__desc">Заглядывайте на чашку любимого напитка или свяжитесь с нами удобным способом.</p>
+                        
+                        <ul class="contact__list">
+                            <li>
+                                <span class="contact__label">Город:</span>
+                                <span class="contact__value">Екатеринбург</span>
+                            </li>
+                            <li>
+                                <span class="contact__label">Адрес:</span>
+                                <span class="contact__value">Адрес кофейни будет добавлен</span>
+                            </li>
+                            <li>
+                                <span class="contact__label">Телефон:</span>
+                                <span class="contact__value">+7 (999) 000-00-00</span>
+                            </li>
+                            <li>
+                                <span class="contact__label">График работы:</span>
+                                <span class="contact__value">Пн-Вс: 08:00 – 21:00</span>
+                            </li>
+                        </ul>
+
+                        <div class="socials">
+                            <a href="#" class="socials__link" aria-label="Telegram">Telegram</a>
+                            <a href="#" class="socials__link" aria-label="VKontakte">VKontakte</a>
+                            <a href="#" class="socials__link" aria-label="Instagram">Instagram</a>
+                        </div>
+                    </div>
+
+                    <!-- Feedback Form -->
+                    <div class="contact__form-container">
+                        <h3 class="form__title">ДАВАЙТЕ БУДЕМ НА СВЯЗИ</h3>
+                        <p class="form__subtitle">Оставьте сообщение, и мы ответим в ближайшее время.</p>
+                        
+                        <form class="form" id="feedbackForm" novalidate>
+                            <div class="form__group">
+                                <label for="name" class="form__label">Ваше имя</label>
+                                <input type="text" id="name" name="name" class="form__input" placeholder="Введите ваше имя" required>
+                                <span class="form__error" id="nameError">Пожалуйста, введите имя</span>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="phone" class="form__label">Номер телефона</label>
+                                <input type="tel" id="phone" name="phone" class="form__input" placeholder="+7 (___) ___-__-__" required>
+                                <span class="form__error" id="phoneError">Введите корректный номер телефона</span>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="message" class="form__label">Текст сообщения</label>
+                                <textarea id="message" name="message" class="form__textarea" placeholder="Ваше сообщение или вопрос..." rows="4" required></textarea>
+                                <span class="form__error" id="messageError">Введите сообщение</span>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary btn--full">ОТПРАВИТЬ</button>
+                            
+                            <div class="form__success" id="formSuccess">
+                                Спасибо! Ваше сообщение успешно отправлено. Мы свяжемся с вами в ближайшее время.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Map Placeholder -->
+                <div class="map-placeholder">
+                    <div class="map-placeholder__content">
+                        <span>Карта Екатеринбурга (Место под интеграцию интерактивной карты)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__brand">
+                <a href="#home" class="logo">VARKA</a>
+                <p class="footer__tagline">Твой повод замедлиться</p>
+            </div>
+
+            <ul class="footer__nav">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#atmosphere">Атмосфера</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+
+            <div class="footer__copy">
+                <p>© 2026 VARKA. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
